@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./form.css">
+</head>
+<body>
+
+    <div class="container">
+        <form id="surveyForm">
+            <div class="form-group">
+                <label class="label">First Name:</label>
+                <input type="text" class="input-field" name="firstName" required>
+            </div>
+            <div class="form-group">
+                <label class="label">Last Name:</label>
+                <input type="text" class="input-field" name="lastName" required>
+            </div>
+            <div class="form-group">
+                <label class="label">Date of Birth:</label>
+                <input type="date" class="input-field" name="dob" required>
+            </div>
+            <div class="form-group">
+                <label class="label">Country:</label>
+                <select class="input-field" name="country" required>
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+                    <option value="UK">UK</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="label">Gender:</label><br>
+                <input type="checkbox" name="gender" value="Male"> Male
+                <input type="checkbox" name="gender" value="Female"> Female
+            </div>
+            <div class="form-group">
+                <label class="label">Profession:</label>
+                <input type="text" class="input-field" name="profession" required>
+            </div>
+            <div class="form-group">
+                <label class="label">Email:</label>
+                <input type="email" class="input-field" name="email" required>
+            </div>
+            <div class="form-group">
+                <label class="label">Mobile Number:</label>
+                <input type="tel" class="input-field" name="mobileNumber" required>
+            </div>
+            <div class="button-group">
+                <button type="submit" class="button">Submit</button>
+                <button type="button" class="button reset" onclick="resetForm()">Reset</button>
+            </div>
+        </form>
+    </div>
+    
+    <div id="popup" class="popup">
+        <div class="popup-content" id="popupContent">
+        </div>
+    </div>
+    
+        
+
+
+    <script src="./form.js"></script>
+
+</body>
+</html>

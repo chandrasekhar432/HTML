@@ -1,0 +1,40 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+form{
+    padding-top: 200px;
+    padding-left: 500px;
+}
+form table tr td input{
+    height: 64px;
+    width: 100px;
+    border: 0px;
+    background-color: black;
+    opacity: 1;
+    color: white;
+  
+}
+#input{
+    border: 1px solid;
+    width: 280px;
+    height: 60px;
+    border: 1px solid;
+    background-color: white;
+    color: black;
+}
+.position{
+    position: relative;
+    right: 200px;
+}
+#ac input{
+    background-color: forestgreen ;
+    opacity: 0.7;
+}
+
+#grey input{
+    background-color: darkgrey;
+    color: white;
+    /* background-color: aqua; */
+}

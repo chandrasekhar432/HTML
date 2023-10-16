@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./cal.css">
+</head>
+<body>
+    <form action="" name="caluculator" >
+
+    <table cellpadding="0px" cellspacing="0px">
+
+            <tr>
+                <td>
+                    <input type="text"name="text_input" id="input">
+                    
+                </td>
+                <td id="ac">
+                    <input type="button" value="AC" onclick="input_data=''; text_input.value='';">
+
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <input type="button" value="9" onclick="display('9')">
+                </td>
+                   <td class="position">
+                    <input type="button" value="8" onclick="display('8')">
+                   </td>
+                   <td class="position">
+                    <input type="button" value="7" onclick="display('7')">
+                   </td>
+                   <td id="grey" class="position">
+                    <input type="button" value="+" onclick="display('+')">
+                   </td>
+    
+            </tr>
+            <tr>
+
+                   <td>
+                    <input type="button" value="4" onclick="display('9')">
+                   </td>
+                   <td class="position">  
+                    <input type="button" value="5" onclick="display('8')">
+                   </td>
+                   <td class="position">
+                    <input type="button" value="6" onclick="display('7')">
+                   </td>
+                   <td id="grey" class="position">
+                    <input type="button" value="-" onclick="display('+')">
+
+                   </td>
+            </tr>
+            <tr>
+
+                <td>
+                    <input type="button" value="1" onclick="display('9')">
+                   </td>
+                   <td class="position">
+                    <input type="button" value="2" onclick="display('8')">
+                   </td>
+                   <td class="position">
+                    <input type="button" value="3" onclick="display('7')">
+                   </td>
+                   <td id="grey" class="position">
+                    <input type="button" value="*" onclick="display('+')">
+
+                   </td>
+            </tr>
+            <tr>
+
+                <td>
+                    <input type="button" value="." onclick="display('.')">
+                   </td>
+                   <td class="position">
+                    <input type="button" value="0" onclick="display('0')">
+                   </td>
+                   <td class="position">
+                    <input type="button" value="=" onclick="text_input.value = eval(input_data)">
+                   </td>
+                   <td id="grey" class="position">
+                    <input type="button" value="%" onclick="display('%')">
+
+                   </td>
+            </tr>
+
+        </table>
+
+
+        </form>
+
+
+
+
+  
+
+    
+    <script src="./cal.js"></script>
+</body>
+</html>
